@@ -1,0 +1,20 @@
+# mac
+.DS_Store
+
+# gradle
+.gradle/
+build/
+
+# maven
+target/
+
+# eclipse
+.metadata
+bin/
+tmp/
+.settings/
+.project
+.classpath
+
+# idea
+.idea/
