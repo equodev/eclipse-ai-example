@@ -1,0 +1,14 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.equo.ide</groupId>
+  <artifactId>ai-example-maven</artifactId>
+  <version>1</version>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.9.3</version>
+    </dependency>
+</dependencies>
+</project>
