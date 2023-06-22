@@ -10,5 +10,5 @@
       <artifactId>junit-jupiter</artifactId>
       <version>5.9.3</version>
     </dependency>
-</dependencies>
+  </dependencies>
 </project>

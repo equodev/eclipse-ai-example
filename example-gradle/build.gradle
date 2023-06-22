@@ -1,11 +1,33 @@
 
+plugins {
+  id 'dev.equo.ide' version '1.2.0'
+}
+
 apply plugin: 'java'
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter:5.9.3"
+  testImplementation "org.junit.jupiter:junit-jupiter:5.9.3"
 }
 tasks.named('test') {
-	useJUnitPlatform()
+  useJUnitPlatform()
+}
+
+equoIde {
+  // import this project automatically
+  gradleBuildship().autoImport('.')
+  
+  // same idea as GitHub copilot
+  //   free = short code completions
+  //   pro = $12/mo and longer code completions
+  tabnine() 
+  
+  // Equo's ChatGPT plugin
+  //    free = GPT 3.5, sort of useful
+  //    plus = $20/mo, incredibly useful
+  chatGPT()
+
+  // another ChatGPT plugin, more features, harder to set up
+  //assistAi()
 }

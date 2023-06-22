@@ -1,1 +1,3 @@
 rootProject.name = 'equo-ide-ai-example'
+
+includeBuild '../../equo-ide'
