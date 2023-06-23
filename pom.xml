@@ -22,6 +22,7 @@
         <configuration>
           <!-- import this project automatically -->
           <m2e><autoImport>${project.basedir}</autoImport></m2e>
+          <useAtomos>true</useAtomos>
 
           <!-- same idea as GitHub copilot
                free = short code completions
