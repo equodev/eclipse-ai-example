@@ -1,4 +1,5 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>dev.equo.ide</groupId>
   <artifactId>equo-ide-ai-example</artifactId>
@@ -11,4 +12,31 @@
       <version>5.9.3</version>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>dev.equo.ide</groupId>
+        <artifactId>equo-ide-maven-plugin</artifactId>
+        <version>1.3.1</version>
+        <configuration>
+          <!-- import this project automatically -->
+          <m2e><autoImport>${project.basedir}</autoImport></m2e>
+
+          <!-- same idea as GitHub copilot
+               free = short code completions
+               pro = $12/mo and longer code completions -->
+          <tabnine/>
+
+          <!-- Equo's ChatGPT plugin
+               free = GPT 3.5, useful for simple tasks
+               pro = $20/mo, useful for shockingly complex tasks -->
+          <!-- <chatGPT/> -->
+
+          <!-- another ChatGPT plugin -->
+          <assistAi/>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

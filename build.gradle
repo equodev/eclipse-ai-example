@@ -17,8 +17,8 @@ equoIde {
   tabnine() 
 
   // Equo's ChatGPT plugin
-  //    free = GPT 3.5, sort of useful
-  //    plus = $20/mo, incredibly useful
+  //    free = GPT 3.5, useful for simple tasks
+  //    plus = $20/mo, useful for shockingly complex tasks
   //chatGPT()
 
   // another ChatGPT plugin
