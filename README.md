@@ -45,7 +45,8 @@ To ask this question, the key things to remember are:
 
 Here's what that looks like.
 
-![GPT4 converting a test from 5 to 4](gpt4-junit5-to-4.png)
+<img src="gpt4-junit5-to-4.png" width="550px"/>
+
 
 If you ask that same question using GPT-3.5 instead of GPT-4 (try it yourself!), you get almost the same answer, except:
 
@@ -54,7 +55,7 @@ If you ask that same question using GPT-3.5 instead of GPT-4 (try it yourself!),
 
 In this case it's not a huge difference, but it demonstrates how GPT4 can do a much better job explaining itself. If you don't like the static assertions, just tell that to ChatGPT.
 
-![Tell ChatGPT you don't want static imports](gpt4-junit5-to-4-no-static-import.png)
+<img src="gpt4-junit5-to-4-no-static-import.png" width="450px"/>
 
 ### Things to ask
 
