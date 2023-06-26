@@ -1,0 +1,53 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
+name: ci
+
+on: [push]
+
+jobs:
+  build_linux:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        java: ['11', '17']
+    name: Linux Java ${{ matrix.java }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: jdk ${{ matrix.java }}
+        uses: actions/setup-java@v3
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: 'temurin'
+      - name: gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+      - name: gradle caching
+        uses: gradle/gradle-build-action@v2
+      - run: ./gradlew equoList --installed
+      - run: ./mvnw equo-ide:list -Dinstalled
+  build_win:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        java: ['17']
+    name: Win Java ${{ matrix.java }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: jdk ${{ matrix.java }}
+        uses: actions/setup-java@v3
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: 'temurin'
+      - name: gradle wrapper
+        uses: gradle/wrapper-validation-action@v1
+      - name: gradle caching
+        uses: gradle/gradle-build-action@v2
+      - run: ./gradlew equoList --installed
+      - run: ./mvnw equo-ide:list -Dinstalled
