@@ -15,7 +15,7 @@ TODO: screenshot
 
 You can install Tabnine from the [Eclipse marketplace](https://marketplace.eclipse.org/content/tabnine-ai-assistant-software-developers), but in this demo we are using [EquoIDE](https://github.com/equodev/equo-ide#quickstart) to handle installation.
 
-If it's not working for you, make sure to click the (TODO icon) in the bottom right and login to your Tabnine account.
+If it's not working for you, make sure to click the <img src="images/tabnine-logo.png" height="18px"> in the bottom right and login to your Tabnine account.
 
 ## ChatGPT (outside the IDE)
 
