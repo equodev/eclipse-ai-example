@@ -18,7 +18,7 @@
       <plugin>
         <groupId>dev.equo.ide</groupId>
         <artifactId>equo-ide-maven-plugin</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.0</version>
         <configuration>
           <!-- import this project automatically -->
           <m2e><autoImport>${project.basedir}</autoImport></m2e>
@@ -32,7 +32,9 @@
           <!-- Equo's ChatGPT plugin
                free = GPT 3.5, useful for simple tasks
                pro = $20/mo GPT4, useful for shockingly complex tasks -->
-          <chatGPT/>
+          <chatGPT>
+            <version>1.0.0</version>
+          </chatGPT>
 
           <!-- another ChatGPT plugin, needs API token -->
           <!-- <assistAi/> -->

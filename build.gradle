@@ -1,6 +1,6 @@
 
 plugins {
-  id 'dev.equo.ide' version '1.6.0'
+  id 'dev.equo.ide' version '1.7.0'
 }
 repositories {
   mavenCentral()
@@ -19,7 +19,7 @@ equoIde {
   // Equo's ChatGPT plugin
   //    free = GPT 3.5, useful for simple tasks
   //    plus = $20/mo GPT4, useful for shockingly complex tasks
-  chatGPT()
+  chatGPT('1.0.0')
 
   // another ChatGPT plugin, needs API token
   //assistAi()
