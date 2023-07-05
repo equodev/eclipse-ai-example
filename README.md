@@ -11,7 +11,7 @@ All of these categories of AI tooling are available to Eclipse users. As a quick
 
 GitHub Copilot is not available for Eclipse right now, but [Tabnine](https://www.tabnine.com/) provides exactly the same concept. Compared to Copilot, Tabnine has the bonuses of a free tier and the option to self-host.
 
-![Tabnine demo](images/tabnine-demo.gif)
+<img src="images/tabnine-demo.gif" width=400px">
 
 You can install Tabnine from the [Eclipse marketplace](https://marketplace.eclipse.org/content/tabnine-ai-assistant-software-developers), but in this demo we are using [EquoIDE](https://github.com/equodev/equo-ide#quickstart) to handle installation.
 
