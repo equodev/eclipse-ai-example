@@ -5,7 +5,26 @@ import org.junit.jupiter.api.Test;
 
 public class TempoTest {
     @Test
-    public void bpm() {
-        Assertions.assertEquals(100, new Tempo(100).getBpm());
+    public void testGetHz() {
+        // Arrange
+        Tempo tempo = new Tempo(120);
+
+        // Act
+        double hz = tempo.getHz();
+
+        // Assert
+        Assertions.assertEquals(2.0, hz);
+    }
+
+    @Test
+    public void testToString() {
+        // Arrange
+        Tempo tempo = new Tempo(180);
+
+        // Act
+        String result = tempo.toString();
+
+        // Assert
+        Assertions.assertEquals("Tempo [bpm=180]", result);
     }
 }

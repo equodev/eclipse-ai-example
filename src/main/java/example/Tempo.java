@@ -1,13 +1,18 @@
 package example;
 
 public class Tempo {
-    private final int bpm;
-
-    public Tempo(int bpm) {
+	private int bpm;
+	
+	public Tempo(int bpm) {
         this.bpm = bpm;
     }
-
-    public int getBpm() {
-        return bpm;
+	
+	public double getHz() {
+		return bpm / 60.0;
+	}
+	
+	@Override
+	public String toString() {
+        return "Tempo [bpm=" + bpm + "]";
     }
 }
