@@ -9,6 +9,7 @@ repositories {
 // setup the IDE
 equoIde {
   // import this project automatically
+  //   (takes about 60s for now due to https://github.com/eclipse/buildship/issues/1245)
   gradleBuildship().autoImport('.')
 
   // same idea as GitHub copilot
