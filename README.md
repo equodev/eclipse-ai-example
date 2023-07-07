@@ -17,7 +17,7 @@ You can install Tabnine from the [Eclipse marketplace](https://marketplace.eclip
 
 If it's not working for you, make sure to click the <img src="images/tabnine-logo.png" height="16px">**Tabnine Starter** in the bottom right and login to your Tabnine account.
 
-There is another plugin to watch in this space called [`eclipse.copilot`](https://github.com/vgcpge/eclipse.copilot). It doesn't support copilot-style "ghost text" yet, but you might prefer the GitHub Copilot completions over Tabnine.
+There is another plugin to watch in this space called [`eclipse.copilot`](https://github.com/vgcpge/eclipse.copilot). It doesn't support copilot-style "ghost text" (and [doesn't plan to](https://github.com/equodev/eclipse-ai-example/issues/5)), but you might prefer the GitHub Copilot completions over Tabnine.
 
 ## ChatGPT (inside the IDE)
 
