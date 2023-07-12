@@ -31,7 +31,7 @@ You can also ask ChatGPT to write code from scratch. The combination of its doma
 
 ### GPT-4
 
-The demos above are all using GPT-3.5 which is free. GPT-4 is much more powerful, but API access is currently gated behind a long waitlist. Luckily, if you subscribe to [ChatGPT Plus](https://chat.openai.com/) for $20 per month, you get GPT-4 access within the web interface right away. The demos above use the web interface, so you can use GPT-4 for coding tasks without sitting on a waitlist.
+The demos above are all using GPT-3.5 which is free. GPT-4 is much more powerful, but API access is currently gated behind a waitlist. Luckily, if you subscribe to [ChatGPT Plus](https://chat.openai.com/) for $20 per month, you get GPT-4 access within the web interface right away. The demos above use the web interface, so you can use GPT-4 for coding tasks without sitting on a waitlist.
 
 ### Prompt engineering
 
@@ -39,7 +39,7 @@ If you do some googling around "Prompt engineering", you'll see suggestions to s
 
 The [Equo ChatGPT plugin](https://github.com/equodev/equo-ide-chatgpt) let's you put these best practices into templates so that you don't have to repeat yourself. It also copy-pastes your code into the chat window for you, to save a step and remove a possible source of errors.
 
-Another ChatGPT plugin for Eclipse is [AssistAI](https://github.com/gradusnikov/eclipse-chatgpt-plugin), but you'll need API access to use it - ChatGPT Plus won't help you.
+The Equo ChatGPT plugin was inspired by another Eclipse plugin called [AssistAI](https://github.com/gradusnikov/eclipse-chatgpt-plugin). AssistAI has the advantage that it integrates with the Eclipse context menus, but the disadvantage that it requires an API key - ChatGPT Plus isn't enough.
 
 ## Other tools
 
